@@ -43,12 +43,6 @@ img {
 }
 
 .list {
-    margin: 0;
-    padding: 0;
-    width: 1200px;
-}
-
-.list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -105,6 +99,7 @@ img {
 
 .header-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -169,7 +164,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--link-color);
     margin: auto;
-    display: block;
+    display: inline-flex;
     padding-top: 16px;
     padding-bottom: 16px;
 }
@@ -182,8 +177,13 @@ img {
 }
 
 .contact-logo {
+    align-items: center;
     fill: currentColor;
     margin-right: 10px;
+}
+.header-mail {
+        display: flex;
+        align-items: center;
 }
 
 .header-mail:hover,
@@ -351,13 +351,16 @@ img {
     column-gap: 10px;
     margin-top: 16px;
 }
-
+.socials-items{
+    width: 44px;
+    height: 44px;
+}
 .socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: var(--first-bg-color);
     color: #AFB1B8;
@@ -394,10 +397,10 @@ img {
     column-gap: 30px;
 }
 
-.clients-logos {
+.clients-items {
     width: 170px;
     height: 92px;
-    display: block;
+    display: flex;
     padding: 16px 32px;
     border-radius: 4px;
     color: rgba(175, 177, 184, 1);
@@ -406,8 +409,8 @@ img {
     cursor: pointer;
 }
 
-.clients-logos:hover,
-.clients-logos:focus {
+.clients-items:hover,
+.clients-items:focus {
     border: var(--first-logo-color) 1px solid;
     color: var(--first-logo-color);
 }
@@ -427,8 +430,6 @@ img {
 .footer-adress {
     color: var(--first-bg-color);
 }
-
-
 
 .footer-adress,
 .footer-mail,
@@ -477,12 +478,6 @@ img {
 }
 
 .socials-link-f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--first-bg-color);
 }
@@ -534,13 +529,13 @@ img {
     flex-wrap: wrap;
     gap: 30px;
 }
-
-.gallery.link {
+.card-item:hover{
     display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.card-item:hover,
-.card-item:focus {
+.link-portfolio:focus {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
