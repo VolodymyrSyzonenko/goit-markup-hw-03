@@ -182,8 +182,8 @@ img {
     margin-right: 10px;
 }
 .header-mail {
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .header-mail:hover,
