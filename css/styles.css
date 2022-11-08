@@ -531,6 +531,7 @@ img {
 .link-portfolio{
     text-decoration: none;
 }
+
 .link-portfolio:hover,
 .link-portfolio:focus {
     display: block;
