@@ -45,7 +45,7 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="button">Замовити послугу</button>
+                <button type="button" class="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
 
@@ -98,13 +98,22 @@
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="list">
                     <li>
+                        <div class="overlay">
                         <img src="./img/img.jpeg" alt="notebook" width="370" height="294" />
+                        <p class="overlay-text">Десктопні додатки</p>
+                    </div>
                     </li>
                     <li>
+                        <div class="overlay">
                         <img src="./img/img1.jpeg" alt="phone" width="370" height="294" />
+                        <p class="overlay-text">Мобільні додатки</p>
+                    </div>
                     </li>
                     <li>
+                        <div class="overlay">
                         <img src="./img/img2.jpeg" alt="tablet" width="370" height="294" />
+                        <p class="overlay-text">Дизайнерські рішення</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -224,17 +233,17 @@
                                         </svg>
                                     </a>
                                 </li>
-                                <liclass="socials-items">
+                                <li class="socials-items">
                                     <a class="socials-link link" href="https://linkedin.com" target="_blank"
                                         rel="noopener noreferrer" aria-label="Linkedin">
                                         <svg class="socials-icon" width="20" height="20">
                                             <use href="./img/icons.svg#linkedin"></use>
                                         </svg>
                                     </a>
-                    </li>
-                </ul>
-            </div>
-            </li>
+                                </li>
+                            </ul>
+                    </div>
+                 </li>
             <li class="item">
                 <img src="./team/img14.jpeg" alt="mykhailo" width="270" height="260" />
                 <div class="team-description">
@@ -378,6 +387,17 @@
             </div>
         </div>
     </footer>
-</body>
+   <!--Modal window-->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-btn" data-modal-close>
+                    <svg class="modal-icon" width="11" height="11">
+                        <use href="/img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    <script src="./js/modal.js"></script>
+    </body>
 
 </html>
